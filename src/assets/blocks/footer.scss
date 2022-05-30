@@ -1,0 +1,41 @@
+.footer{
+    &-btn{
+        position: fixed;
+        height: 60px;
+        // background-color: $done-color;
+        background-color: transparent;
+        // min-width: 292px;
+        column-gap: 20px;
+        max-width: 676px;
+        bottom: 15px;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        justify-content: space-between;
+        margin-left: 18px;
+        z-index: 3;
+        transition: 0.5s all;
+        button{
+            background-color: #5684b1;
+            border: 1px solid #3000;
+            &:disabled{
+              background-color: #5684b1;
+              border: 1px solid #3000;  
+            }
+        }
+        
+    }
+}
+
+.btn-primary{
+    &:hover{
+        background-color: #5684b1;
+        border: 1px solid #3000;
+    }
+    &:focus{
+        background-color: #5684b1;
+        border: 1px solid #3000;
+    }
+}

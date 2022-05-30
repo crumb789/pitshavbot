@@ -1,0 +1,67 @@
+.header{
+    position: relative;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $blue-ligth;
+    padding: 0 15px;
+    border-radius: 0 0 5px 5px;
+    transition: 0.5s all;
+    z-index: 2;
+    border: 1px solid $text-color;
+    h1{
+        font-size: 20px;
+    }
+    .bi{
+        &::before{
+            color: $dark-blue;
+            font-size: 30px;
+        }
+    }
+    &-user{
+        display: flex;
+        flex-direction: column;
+        span{
+            color: $text-color;
+        }
+    }
+    &-back{
+        // position: absolute;
+        // bottom: -40px;
+        // left: 0;
+        position: fixed;
+        top: 140px;
+        z-index: -1;
+        left: 1%;
+        a{
+            i{
+                
+            }
+        }
+    }
+    &-basket{
+        position: relative;
+        transition: 0.5s all;
+        display: flex;
+        align-items: center;
+        &-sum{
+            // display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            border-radius: 0.25rem 0 0 0.25rem;
+            // position: absolute;
+            // left: -70px;
+            // top: 50%;
+            // transform: translateY(-50%);
+            height: 105%;
+            width: 138%;
+            background-color: #f8f9fa;
+            transition: 0.5s all;
+        }
+    }
+}
+
+.headerBasketActive{
+    border: 1px solid #805ea3;
+}

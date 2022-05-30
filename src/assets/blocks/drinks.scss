@@ -1,0 +1,21 @@
+.drink{
+    &-placeholder{
+        background-color: none;
+        font-size: 22px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 50px;
+    }
+    &-product{
+        background-color: #5684b11c;
+        &-wrapper{
+            background-color: #5684b11c;
+        }
+    }
+    &-item{
+        background-color: #a3b2cb6e;
+    }
+    &-img{
+        background-color: transparent;
+    }
+}

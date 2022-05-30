@@ -1,0 +1,104 @@
+.menu{
+    
+    &-list{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1, 200px);
+        grid-auto-rows: 200px;
+        justify-items: center;
+        gap: 60px;
+        margin-bottom: 100px;
+        a{
+            text-decoration: none;
+        }
+        &-wrapper{
+            
+        }
+        &-item{
+            // border: 0.5px solid #000;
+            max-width: 200px;
+            width: 200px;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-bottom: 60px;
+            height: 200px;
+            border: 1px solid $text-color;
+            &:hover{
+                // border: 0.5px solid #000;
+                &.menu-list-item_product{
+                background-color: red;
+                }
+            }
+            &_product{
+                text-align: center;
+                border-radius: 9px;
+                background-color: $lite-blue;
+                color: #fff;
+                
+            }
+            img{
+                border-radius: 15px;
+                width: 100%;
+                margin-bottom: 10px;
+                height: 100%;
+                object-fit: cover;
+                box-shadow: 1px 1px 5px $blue-ligth;
+                
+            }
+            &:nth-child(3){
+                img{
+                    padding: 7px;
+                }
+            }
+            &:nth-child(2){
+                img{
+                    padding: 7px;
+                }
+            }
+        }
+    }
+}
+
+.menuMini{
+    display: flex;
+    height: 26px;
+    column-gap: 10px;
+    transition: 0.4s all;
+    overflow: auto;
+}
+
+.menuHide{
+    display: none;
+    transition: 0.4s all;
+
+}
+.menuMiniItem{
+    height: 26px;
+    margin-bottom: 0;
+    width: 100px;
+    transition: 0.4s all;
+    border: none;
+
+}
+
+.menuMiniList{
+    height: 26px;
+    margin-bottom: 0;
+    display: block;
+    transition: 0.4s all;
+    margin-top: 15px;
+}
+
+.menuMiniProduct{
+    width: 200px;
+    border: 1px solid $text-color;
+    width: 100px;
+    border-radius: 5px;
+    transition: 0.4s all;
+
+}
+
+.menuActive{
+    background-color: #805ea3;
+}

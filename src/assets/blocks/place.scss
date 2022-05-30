@@ -1,0 +1,30 @@
+.place{
+    &-wrapper{
+        margin-top: 50px;
+        text-align: center;
+    }
+    &-item{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 20px;
+        &-name{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        iframe{
+            margin-top: 20px;
+        }
+    }
+    &-map{
+        &_select{
+            iframe{
+                margin-top: 20px;
+                width: 100%;
+                height: 300px;
+            }
+        }
+    }
+}
+
+.selName{
+    color: $blue-ligth;
+}

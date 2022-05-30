@@ -1,0 +1,44 @@
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;500;700;800&family=Oswald:wght@300;400;500;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;500;700;800&family=Oswald:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;500;700;800&family=Oswald:wght@300;400;500;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import '@/assets/variables/mixins.scss';
+
+
+@import '@/assets/blocks/header.scss';
+@import '@/assets/blocks/menu.scss';
+@import '@/assets/blocks/container.scss';
+@import '@/assets/blocks/eat.scss';
+@import '@/assets/blocks/divider.scss';
+@import '@/assets/blocks/basket.scss';
+@import '@/assets/blocks/footer.scss';
+@import '@/assets/blocks/drinks.scss';
+@import '@/assets/blocks/sideMenu.scss';
+@import '@/assets/blocks/place.scss';
+@import '@/assets/blocks/icons.scss';
+
+
+
+
+
+
+
+
+*{
+    // font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    background-color: $body;
+}
+
+
+::-webkit-scrollbar {
+    // width: 24px; /* ширина для вертикального скролла */
+    // height: 8px; /* высота для горизонтального скролла */
+    // background-color: #143861;
+    display: none;
+}

@@ -1,0 +1,119 @@
+.eat{
+    z-index: 10;
+    &-list{
+        margin-top: 15px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1, 250px);
+        grid-auto-rows: 250px;
+    }
+    &-wrapper{
+        position: relative;
+        
+    }
+    &-img{
+        position: relative;
+        background-color: #fff4226e;
+        height: 100%;
+        width: 100%;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0 10px;
+        &-back{
+            z-index: -1;
+            position: absolute;
+            width: 60%;
+            height: 60%;
+            transform: translate(42%, -21%);
+            opacity: 0.4;
+            img{
+                box-shadow: none;
+            }
+        }
+    }
+    &-info{
+        position: absolute;
+        top: 0;
+        right: 5px;
+        font-size: 24px;
+        cursor: pointer;
+        &::before{
+            color: $purple;
+        }
+    }
+    &-item{
+        position: relative;
+        cursor: default;
+        width: 250px;
+        max-width: 250px;
+        height: 250px;
+        margin-bottom: 100px;
+    }
+    &-product{
+        height: 40px;
+        line-height: 40px;
+        // background-color: #a3b2cbcc;
+        color: $dark-blue;
+        font-weight: 700;
+        // padding-left: 10px;
+        font-size: 25px;
+        letter-spacing: 2px;
+        // border-radius: 0 0 9px 9px;
+        background-color: #f8f6b26e;
+        padding: 0 9px;
+        border-radius: 0.25rem;
+        &-wrapper{
+            background-color: #f8f6b26e;
+            padding: 0px 5px;
+            border-radius: 5px;
+        }
+        &_structure{
+            font-size: 16px;
+            color: #fff;
+            position: relative;
+            font-weight: 700;
+            background-color: #019875;
+            border-radius: 5px 15px;
+            padding: 7px 15px;
+        }
+    }
+    &-type{
+        letter-spacing: 2px;
+        font-weight: 600;
+        line-height: 35px;
+        color: $dark-blue;
+        display: flex;
+        justify-content: space-between;
+        
+        &-price{
+            color: #000;
+            display: flex;
+            column-gap: 5px;
+            
+        }
+    }
+    &-btn{
+        height: 85%;
+        font-size: 15px;
+    }
+    &-add{
+        font-size: 20px;
+        display: flex;
+        column-gap: 16px;
+        i{
+            cursor: pointer;
+            font-size: 20px;
+        }
+    }
+
+}
+.eat-add-to-basket{
+    font-size: 20px;
+    cursor: pointer;
+    i{
+        &::before{
+
+        }
+    }
+}

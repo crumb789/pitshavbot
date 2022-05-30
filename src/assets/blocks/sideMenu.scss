@@ -1,0 +1,111 @@
+.side{
+    &-menu{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+        justify-content: center;
+        background-color: #e3d7ef;
+        width: 90vw;
+        height: 100vh;
+        max-width: 676px;
+        left: -200%;
+        z-index: 3;
+        transition: 0.5s all;
+        &-btn{
+            width: 30px;
+            height: 2px;
+            background-color: #fff;
+            border-radius: 3px;
+            &:nth-child(2){
+                width: 20px;
+            }
+        }
+        &-item{
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 20px;
+            cursor: pointer;
+            &:hover{
+                color: $blue-ligth;
+            }
+        }
+    }
+}
+
+.sideMenu{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    height: 38px;
+    justify-content: center;
+    width: 55px;
+    transition: 0.5s all;
+    font-size: 18px;
+    padding: 5px;
+    i{
+        // transform: rotate(-45deg);
+        color:#fff;
+        transition: 0.5s all;
+    }
+}
+.active{
+    display: flex;
+    transition: 0.5s all;
+    margin: 4px 7px 7px;
+    border: 1px solid $text-color;
+    border-radius: 10px;
+    box-shadow: 52px -5px 2px #000000bd, -52px -5px 0px #000000bd;
+    left: 50%;
+    transform: translateX(-52%);
+    
+}
+
+.rotate{
+    display: none;
+    transition: 0.4s all;
+}
+
+.hide{
+    display: none;
+    transition: 0.4s all;
+}
+
+.rotateBack{
+    display: none;
+    transition: 0.4s all;
+}
+
+.show-rotate{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -6px;
+    opacity: 1;
+    border: 3px solid #e3d7ef;
+    border-radius: 100%;
+    width: 44px;
+    font-size: 23px;
+    background-color: $dark-blue;
+    transition: 0.5s all;
+    animation: goTop 0.7s 1 ease;
+    i{
+        &::before{
+            // color: #000;
+        }
+
+    }
+}
+
+@keyframes goTop{
+    0%{
+        top: 0px;
+        opacity: 0;
+    }
+    100%{
+        top: -6px;
+        opacity: 1;
+    }
+}
+
