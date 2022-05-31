@@ -10,8 +10,9 @@
         width: 90vw;
         height: 100vh;
         max-width: 676px;
-        left: -200%;
-        z-index: 3;
+        // left: -000%;
+        z-index: -1;
+        opacity: 0;
         transition: 0.5s all;
         &-btn{
             width: 30px;
@@ -57,8 +58,10 @@
     border: 1px solid $text-color;
     border-radius: 10px;
     box-shadow: 52px -5px 2px #000000bd, -52px -5px 0px #000000bd;
-    left: 50%;
-    transform: translateX(-52%);
+    z-index: 3;
+    opacity: 1;
+    // left: 50%;
+    // transform: translateX(-52%);
     
 }
 
