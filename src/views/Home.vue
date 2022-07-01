@@ -481,7 +481,7 @@ export default {
             this.basket = JSON.parse(sessionStorage.basket)
     }
     if(sessionStorage.sumDrinkBasket){
-            this.sumDrinkBasket= JSON.parse(sessionStorage.sumDrinkBasket)
+            this.sumDrinkBasket = JSON.parse(sessionStorage.sumDrinkBasket)
     }
     if(sessionStorage.drinkBasket){
             this.drinkBasket = JSON.parse(sessionStorage.drinkBasket)

@@ -35,7 +35,7 @@ export default {
                     "id": 0,
                     "product": 'Coca-Cola',
                     "icon": require("@/assets/images/icons_drink/coke.png"),
-                    "structure": 'himoza',
+                    "structure": 'Coca-Cola',
                     types:[
                         {
                             "typeId": 0,
@@ -55,7 +55,7 @@ export default {
                     "id": 1,
                     "product": 'Pepsi',
                     "icon": require("@/assets/images/icons_drink/open-pepsi-can.png"),
-                    "structure": 'himoza vkusnee',
+                    "structure": 'Pepsi',
                     types:[
                         {
                             "typeId": 2,
@@ -75,7 +75,7 @@ export default {
                     "id": 2,
                     "product": 'Lipton',
                     "icon": require("@/assets/images/icons_drink/tea.png"),
-                    "structure": 'chqi s himozoi',
+                    "structure": 'Lipton',
                     types:[
                         {
                             "typeId": 4,
@@ -95,7 +95,7 @@ export default {
                     "id": 3,
                     "product": 'Rich',
                     "icon": require("@/assets/images/icons_drink/juice.png"),
-                    "structure": 'voda',
+                    "structure": 'Rich',
                     types:[
                         {
                             "typeId": 6,
@@ -115,7 +115,7 @@ export default {
                     "id": 4,
                     "product": 'Wather',
                     "icon": require("@/assets/images/icons_drink/plastic-bottle.png"),
-                    "structure": 'dova',
+                    "structure": 'Wather',
                     types:[
                         {
                             "typeId": 8,
