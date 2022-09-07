@@ -90,17 +90,18 @@
 
 
 
-  <footer-buttons v-if="openMenuItem !== 'basket'">
-    <button @click="sideMenuChange" type="button" class="btn btn-primary sideMenu">
+  <footer-buttons>
+    <div @click="backToHome" v-if="openMenuItem !== false && !sideMenu"  class="btn btn-success">
+        <i class="bi bi-caret-left"></i>
+    </div>
+    <button  v-if="openMenuItem !== 'basket'"
+      @click="sideMenuChange" type="button" class="btn btn-primary sideMenu">
       <div class="side-menu-btn" :class="{rotate: sideMenu}"></div>
       <div class="side-menu-btn" :class="{hide: sideMenu}"></div>
       <div class="side-menu-btn" :class="{rotateBack: sideMenu}"></div>
-      <i   class="bi bi-x-lg show-rotate" v-if="sideMenu"></i>
-        
+      <i   class="bi bi-x-lg show-rotate" v-if="sideMenu"></i>        
     </button>
-    <!-- <button @click="closeApp" type="button" class="btn btn-success">
-       Close app
-    </button> -->
+
   </footer-buttons>
 
 

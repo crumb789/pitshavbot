@@ -9,6 +9,7 @@
         justify-items: center;
         gap: 60px;
         margin-bottom: 100px;
+        animation: showAnim  1s linear 1;
         a{
             text-decoration: none;
         }
@@ -101,4 +102,13 @@
 
 .menuActive{
     background-color: #805ea3;
+}
+
+@keyframes showAnim{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
 }

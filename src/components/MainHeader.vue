@@ -5,11 +5,6 @@
         <span style="font-weight: 700;">
           <h4>{{firstName}}  {{lastName}}</h4>
         </span>
-        <div class="header-back" v-if="openMenuItem !== false && sideMenu === false">
-          <a href="#" @click="$emit('back-to-home')">
-            <i class="bi bi-arrow-90deg-left"></i>
-          </a>
-        </div>
       </h1>
       
       <button :disabled='totalSum.length < 1' type="button" class="btn btn-light header-basket" :class="{headerBasketActive: openMenuItem === 'basket'}">

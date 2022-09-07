@@ -96,7 +96,10 @@
         </div>
         
 
-        <footer-buttons >
+        <footer-buttons>
+            <div @click="backToHome" v-if="openMenuItem !== false && !sideMenu"  class="btn btn-success">
+                <i class="bi bi-caret-left"></i>
+            </div>
             <button @click="goToPay" type="button" class="btn btn-primary">
                     Продолжить
             </button>
