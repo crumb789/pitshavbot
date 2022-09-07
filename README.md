@@ -1,3 +1,7 @@
+https://crumb789.github.io/pitshavbot/#/
+
+https://t.me/pitshavtestbot
+
 # pitshav_v2
 
 ## Project setup
