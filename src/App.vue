@@ -49,6 +49,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 a{
   color: var(--tg-theme-link-color);
 }

@@ -2,7 +2,8 @@
     max-width: 700px;
     position: relative;
     margin-bottom: 50px;
-
+    box-sizing: border-box;
     min-height: 150vh;
     padding-bottom: 90px;
+    background-color: var(--tg-color-scheme-dark);
 }

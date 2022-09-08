@@ -1,4 +1,17 @@
 .footer{
+    position: absolute;
+    height: 50px;
+    bottom: 0px;
+    width: 92%;
+    // width: 414px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    column-gap: 6px;
+    align-items: center;
+    background-color: $lite-blue;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #000;
     &-btn{
         position: fixed;
         height: 60px;

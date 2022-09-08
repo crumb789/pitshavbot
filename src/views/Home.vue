@@ -104,6 +104,10 @@
 
   </footer-buttons>
 
+  <footer-item>
+
+  </footer-item>
+
 
   </div>
 </template>
@@ -124,6 +128,7 @@ import SideMenu from '@/components/SideMenu.vue'
 import AboutUs from '@/components/AboutUs.vue'
 import Place from '@/components/Place.vue'
 import Beer from '@/components/Beer.vue'
+import FooterItem from '@/components/FooterItem.vue'
 
 
 
@@ -146,7 +151,8 @@ export default {
     SideMenu,
     AboutUs,
     Place,
-    Beer
+    Beer,
+    FooterItem
   },
   data(){
     return{
@@ -444,7 +450,9 @@ export default {
     //       }
     //     })
     // },
-
+    toTopPage(){
+      window.scrollTo(0, 0)
+    },
 
     nameGet(){      
       const initData = window.Telegram.WebApp.initData || ''
@@ -532,6 +540,7 @@ export default {
       handler(newVal){
         sessionStorage.openMenuItem = JSON.stringify(newVal)
         this.sideMenu = false
+        this.toTopPage()
       }
     },
     basketDescription:{
@@ -545,8 +554,6 @@ export default {
 
 
 <style lang="scss">
-  .container{
-    background-color: var(--tg-color-scheme-dark);
-  }
+
 
 </style>
