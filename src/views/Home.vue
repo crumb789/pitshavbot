@@ -472,12 +472,12 @@ export default {
 
 
   },
-  // created(){
-  //   window.Telegram.WebApp.ready(); //////инициализация web app
-  //   window.Telegram.WebApp.expand() ///////web app на всю высоту
-  //   this.nameGet()
+  created(){
+    window.Telegram.WebApp.ready(); //////инициализация web app
+    window.Telegram.WebApp.expand() ///////web app на всю высоту
+    this.nameGet()
 
-  // },
+  },
    
   computed: {
 
