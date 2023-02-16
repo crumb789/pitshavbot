@@ -24,7 +24,7 @@
                                 Дополнения
                         </div>
                     </div>
-                <div v-if="openAdd === index" class="basket-addMenu">
+                <div v-if="openAdd === index" class="basket-addMenu" :class="{showed: openAdd === index}">
                     <div v-for="(menu, indexMenu) in item.addMenu" :key="menu.id" class="basket-addMenu_item">
                         {{menu.name}}
                         <div style="display:flex; column-gap: 6px">+{{menu.price}} руб.
